@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRISM PRESS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="banner" id="home">
+        <div class="navbar-container">
+            <!-- Logo -->
+            <img src="pressprismlogo.png" class="logo" alt="PressPrism Logo">
+        </div>
+        
+        <div id= "sideNav"> 
+        <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#authors">Authors</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="articles.html">Articles</a></li>    
+        </ul>
+        </nav>
+        </div>
+        
+            <div id="menuBtn">
+                <img src="menu final.png" id="menu">
+            </div>
+        <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+        
+        sideNav.style.right = "-250px";
+        
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+                menu.src ="close icon.png";
+            }
+            else {
+                sideNav.style.right = "-250px";
+                menu.src ="menu final.png";
+            }
+        }
+        </script>
+
+        <main class="content">
+            <h1>PrismPress</h1>
+            <p>Learn how geometry is applied in photography to tell a journalistic story</p>
+            <div class="button-container"> 
+                 <div class="button-container"> 
+        <a href="photos.html"><button type="button"><span></span>GEOMETRY IN PHOTOGRAPHY</button></a>
+        <a href="articles.html"><button type="button"><span></span>STORIES USING GEOMETRIC PHOTOGRAPHY</button></a>
+</div>
+
+                
+            </div>
+        </main>
+    </header>
+
+    <section id="about" class="about">
+    <h2>About</h2>
+    <div class="about-container">
+        <div class="about-text">
+            <p>PrismPress was created as a simple website that teaches how to utilize geometric sequences in taking photos that tell a journalistic story. Web Name aims to help photographers, Broadcasting and Journalism majors, and campus journalists. With the authors being college students Web Name was also created in partial fulfillment of the subject Mathematics in the Modern World</p>
+    <footer class="about-footer">
+        <p>Image sources: Wallpaper Flare, Giphy</p>
+    </footer>
+        </div>
+        <div class="about-gif">
+            <img src="giphy.webp" alt="Camera" />
+        </div>
+    </div>
+</section>
+
+
+<section id="authors" class="authors">
+    <div class="authors-content">
+        <div class="authors-text">
+            <h2>Authors</h2>
+            <p>PrismPress was created as a simple website that teaches how to utilize geometric sequences in taking photos that tell a journalistic story. Web Name aims to help photographers, Broadcasting and Journalism majors, and campus journalists. With the authors being college students Web Name was also created in partial fulfillment of the subject Mathematics in the Modern World</p>
+        </div>
+        <div class="authors-gif">
+            <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2FwMDE0bnFyazRmOTRwMmE1aDlqYjZ2bjFndTJ5bTJuY3UybmR4cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mCRJDo24UvJMA/giphy.gif" alt="Authors GIF">
+        </div>
+    </div>
+    
+    <footer class="authors-footer">
+        <p>Image Source: Giphy</p>
+    </footer>
+</section>
+
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+</body>
+</html>

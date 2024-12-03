@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PrismPress Photos</title>
+    <style>
+
+        #sideNav {
+            position: fixed;
+            top: 0;
+            right: -250px; /* Initially hidden */
+            width: 250px;
+            height: 100%;
+            background-color: #ff9800;
+            transition: right 0.3s;
+            z-index: 999;
+        }
+
+        #sideNav nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #sideNav nav ul li {
+            padding: 15px;
+            text-align: center;
+        }
+
+        #sideNav nav ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        #menuBtn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            z-index: 1000;
+            background-color: #ff9800;
+        }
+
+        #menu {
+            width: 30px;
+            height: 30px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 10px;
+        }
+        article1 {
+            margin-left: 20px;
+            margin-right: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        article {
+            margin-left: 20px;
+            margin-right: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .image-caption {
+            display: block; 
+            margin-top: 10px;  
+            color: #333;
+            font-style: italic;
+            font-size: 12px;
+        }
+        #PrismPress {
+            position: fixed;  
+            top: 10px;        
+            left: 10px;       
+            width: 80px;      
+            height: auto;     
+            z-index: 1000;    
+        }
+        
+        article p {
+            margin-bottom: 10px;
+        }
+        
+        .indented {
+        text-indent: 30px;
+        }
+        @media screen and (max-width: 768px) {
+            #sideNav {
+                right: -250px;
+            }
+            #sideNav.active {
+        right: 0;
+            }   
+            #menuBtn {
+                top: 15px;
+                right: 15px;
+            }
+            #PrismPress {
+                width: 60px; 
+            }
+            article {
+                margin-left: 10px;
+                margin-right: 10px;
+                padding: 15px;
+            }
+            .image-caption {
+                font-size: 10px; 
+            }
+
+            article p {
+                margin-bottom: 15px;
+            }
+
+            #sideNav.active {
+                right: 0;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            h2 {
+                font-size: 1.5em;
+            }
+
+            article p {
+                font-size: 14px; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="PrismPress.png" alt="Logo" id="PrismPress" />
+    <header class="banner" id="home">
+        <div id="sideNav"> 
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html #authors">Authors</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="photos.html">Photos</a></li>
+                    <li><a href="articles.html">Articles</a></li>    
+                </ul>
+            </nav>
+        </div>
+        <div id="menuBtn">
+            <img src="menu final.png" id="menu" alt="Menu">
+        </div>
+    </header>
+
+    <h1>Articles With Geomertic Photos</h1>
+    <article1>
+    <p class ="indented">Below are photos wherein geometry is present.</p>
+    </article1>
+
+    <article>
+        <img src ="1.png" width="500">
+        <p>Using the concept of geometry, the photographer uses lines and shapes to emphasize what the subject is doing or what his current situation is.</p>
+    </article>
+    
+    <article>
+        <img src ="2.png" width="500">
+        <p>By the use of lines and rules in photography, the subject (fireman) was emphasized and was more visible even though there were so many people present in the image.</p>
+    </article>
+    
+    <article>
+        <img src ="3.png" width="500">
+        <p>In this image, geometry helps the viewers recognize the details and the place where the photo was taken.</p>
+    </article>
+    
+    <article>
+        <img src="4.png" width="500">
+        <p>By using the rule of thirds in photography and applying the concept of geometry, the architectural design of the “Tree of Life” was emphasized.</p>
+    </article>
+    
+    <article>
+        <img src="5.png" width="500">
+        <p>Using the rule of odds and the use of lines, the image creates a more meaningful and powerful image.</p>
+    </article>
+    
+    <article>
+        <img src="6.png" width="500">
+        <p>Lines emphasize the details of every image just like in this photo. It tells where the man is and where he is going.</p>
+    </article>
+    
+    <article>
+        <img src="7.png" width="500">
+        <p>Geometry, particularly lines, gives direction. In this photo, using rules in photography and geometry, it creates a story to where the subject is going.</p>
+    </article>
+    
+    <article>
+        <img src="8.png" width="500">
+        <p>Just like in image #7, lines give directions.</p>
+    </article>
+    
+    <article>
+        <img src="9.png" width="500">
+        <p>By using shapes and lines, it creates a powerful meaning to the image.</p>
+    </article>
+    
+    <article>
+        <img src="10.png" width="500">
+        <p>Geometry creates story; it can produce emotions that can be felt by the
+individual looking at the image.</p>
+    </article>
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        var menu = document.getElementById("menu");
+
+        sideNav.style.right = "-250px"; 
+        menuBtn.onclick = function() {
+            if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0"; 
+                menu.src = "close icon.png"; 
+            } else {
+                sideNav.style.right = "-250px"; 
+                menu.src = "menu final.png"; // 
+            }
+        }
+       
+        var PrismPress = document.getElementById("PrismPress");
+        var lastScrollTop = 0;
+
+        window.onscroll = function() {
+        var currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScrollTop === 0) {
+        PrismPress.style.opacity = '1';
+    } else {
+        PrismPress.style.opacity = '0';
+    }
+
+    lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
+}
+
+    </script>
+</body>
+</html>
